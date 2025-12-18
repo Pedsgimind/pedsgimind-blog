@@ -1,7 +1,6 @@
 baseURL = "https://pedsgimind.github.io/pedsgimind-blog/"
 languageCode = "en"
 title = "PedsGIMind | Multilingual Digestive Health & Medical Education"
-theme = "PaperMod"
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 
