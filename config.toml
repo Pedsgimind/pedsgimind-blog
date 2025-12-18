@@ -1,1 +1,41 @@
+baseURL = "https://YOUR-GITHUB-USERNAME.github.io/pedsgimind-blog/"
+languageCode = "en"
+title = "PedsGIMind | Multilingual Digestive Health & Medical Education"
+theme = "PaperMod"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
 
+[languages]
+
+  [languages.en]
+    languageName = "English"
+    weight = 1
+    contentDir = "content/en"
+
+  [languages.fr]
+    languageName = "Français"
+    weight = 2
+    contentDir = "content/fr"
+
+  [languages.es]
+    languageName = "Español"
+    weight = 3
+    contentDir = "content/es"
+
+  [languages.ar]
+    languageName = "العربية"
+    weight = 4
+    contentDir = "content/ar"
+    rtl = true
+
+  [languages.ku]
+    languageName = "Kurdî"
+    weight = 5
+    contentDir = "content/ku"
+    rtl = true
+
+  [languages.fa]
+    languageName = "فارسی"
+    weight = 6
+    contentDir = "content/fa"
+    rtl = true
