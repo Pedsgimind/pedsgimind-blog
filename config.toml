@@ -1,4 +1,4 @@
-baseURL = "https://YOUR-GITHUB-USERNAME.github.io/pedsgimind-blog/"
+baseURL = "https://pedsgimind.github.io/pedsgimind-blog/"
 languageCode = "en"
 title = "PedsGIMind | Multilingual Digestive Health & Medical Education"
 theme = "PaperMod"
