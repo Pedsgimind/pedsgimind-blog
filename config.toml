@@ -17,33 +17,15 @@ relativeURLs = false
     weight = 1
     contentDir = "content/en"
 
-  [languages.fr]
-    languageName = "Français"
-    weight = 2
-    contentDir = "content/fr"
-
-  [languages.es]
-    languageName = "Español"
-    weight = 3
-    contentDir = "content/es"
-
   [languages.ar]
     languageName = "العربية"
-    weight = 4
+    weight = 2
     contentDir = "content/ar"
-    rtl = true
 
   [languages.ku]
     languageName = "Kurdî"
-    weight = 5
+    weight = 3
     contentDir = "content/ku"
-    rtl = true
-
-  [languages.fa]
-    languageName = "فارسی"
-    weight = 6
-    contentDir = "content/fa"
-    rtl = true
 
 [params]
   env = "production"
@@ -57,6 +39,8 @@ relativeURLs = false
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
+  mainSections = ["posts"]
+
 [params.homeInfoParams]
   Title = "Welcome to PedsGIMind"
   Content = """
@@ -68,19 +52,12 @@ Serving professionals, parents, and trainees worldwide — in multiple languages
   description = "Evidence-based pediatric digestive health, gastroenterology, nutrition, and medical education."
 
 [languages.ar.params]
+  rtl = true
   description = "محتوى طبي موثوق في أمراض الجهاز الهضمي للأطفال، التغذية، والتعليم الطبي."
 
-[languages.fr.params]
-  description = "Ressources médicales fiables en gastroentérologie pédiatrique et nutrition."
-
-[languages.es.params]
-  description = "Educación médica y salud digestiva pediátrica basada en evidencia."
-
 [languages.ku.params]
+  rtl = true
   description = "Zanyarîyên pêşkeftî yên tenduristiya têkildar bi geştrewêriyê zarokan."
-
-[languages.fa.params]
-  description = "آموزش پزشکی و سلامت گوارش کودکان مبتنی بر شواهد علمی."
 
 [menu]
   [[menu.main]]
