@@ -1,3 +1,6 @@
+# =========================
+# Core site settings
+# =========================
 baseURL = "https://blog.pedsgimind.ca/"
 languageCode = "en"
 title = "PedsGIMind | Multilingual Digestive Health & Medical Education"
@@ -5,10 +8,14 @@ theme = "PaperMod"
 
 canonifyURLs = true
 relativeURLs = false
-defaultContentLanguage = "en"
 enableRobotsTXT = true
+defaultContentLanguage = "en"
 
+# =========================
+# Multilingual configuration
+# =========================
 [languages]
+
   [languages.en]
     languageName = "English"
     languageCode = "en"
@@ -42,9 +49,46 @@ enableRobotsTXT = true
     weight = 6
     rtl = true
 
+# =========================
+# PaperMod theme parameters
+# =========================
 [params]
+  env = "production"
+  description = "Evidence-based digestive health, nutrition, and medical education for professionals and families."
+
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+
+  disableSpecial1stPost = false
+  hideSummary = false
+
+# =========================
+# Home page settings
+# =========================
+[params.homeInfoParams]
+  Title = "Welcome to PedsGIMind"
+  Content = """
+Evidence-based digestive health, nutrition, and medical education.
+Serving professionals, parents, and trainees worldwide — in multiple languages.
+"""
+
+# =========================
+# Menu (optional, clean)
+# =========================
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Blog"
+  url = "/en/posts/"
+  weight = 2
+
+[[menu.main]]
+  name = "About"
+  url = "/en/about/"
+  weight = 3
