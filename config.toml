@@ -1,6 +1,3 @@
-# =========================
-# Core site settings
-# =========================
 baseURL = "https://blog.pedsgimind.ca/"
 languageCode = "en"
 title = "PedsGIMind | Multilingual Digestive Health & Medical Education"
@@ -10,63 +7,47 @@ enableRobotsTXT = true
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 
-# IMPORTANT:
-# Use clean URLs and avoid weird path rewriting
 canonifyURLs = false
 relativeURLs = false
 
-# =========================
-# Multilingual configuration
-# =========================
 [languages]
 
   [languages.en]
     languageName = "English"
-    languageCode = "en"
     weight = 1
     contentDir = "content/en"
 
   [languages.fr]
     languageName = "Français"
-    languageCode = "fr"
     weight = 2
     contentDir = "content/fr"
 
   [languages.es]
     languageName = "Español"
-    languageCode = "es"
     weight = 3
     contentDir = "content/es"
 
   [languages.ar]
     languageName = "العربية"
-    languageCode = "ar"
     weight = 4
     contentDir = "content/ar"
     rtl = true
 
   [languages.ku]
     languageName = "Kurdî"
-    languageCode = "ku"
     weight = 5
     contentDir = "content/ku"
     rtl = true
 
   [languages.fa]
     languageName = "فارسی"
-    languageCode = "fa"
     weight = 6
     contentDir = "content/fa"
     rtl = true
 
-
-# =========================
-# PaperMod theme parameters
-# =========================
 [params]
   env = "production"
 
-  # Global SEO defaults
   description = "Evidence-based pediatric digestive health, nutrition, and medical education for clinicians, parents, and trainees."
   keywords = ["Pediatric Gastroenterology", "Digestive Health", "Medical Education", "Nutrition", "IBD", "Celiac", "Liver Disease"]
 
@@ -76,13 +57,6 @@ relativeURLs = false
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
 
-  disableSpecial1stPost = false
-  hideSummary = false
-
-
-# =========================
-# Home page settings
-# =========================
 [params.homeInfoParams]
   Title = "Welcome to PedsGIMind"
   Content = """
@@ -90,10 +64,6 @@ Evidence-based digestive health, nutrition, and medical education.
 Serving professionals, parents, and trainees worldwide — in multiple languages.
 """
 
-
-# =========================
-# Language-specific SEO descriptions
-# =========================
 [languages.en.params]
   description = "Evidence-based pediatric digestive health, gastroenterology, nutrition, and medical education."
 
@@ -112,13 +82,7 @@ Serving professionals, parents, and trainees worldwide — in multiple languages
 [languages.fa.params]
   description = "آموزش پزشکی و سلامت گوارش کودکان مبتنی بر شواهد علمی."
 
-
-# =========================
-# Menu (multilingual-safe)
-# Use pageRef (NOT hard-coded /en/ links)
-# =========================
 [menu]
-
   [[menu.main]]
     name = "Home"
     pageRef = "/"
@@ -126,7 +90,7 @@ Serving professionals, parents, and trainees worldwide — in multiple languages
 
   [[menu.main]]
     name = "Blog"
-    pageRef = "/posts/"
+    pageRef = "/posts"
     weight = 2
 
   [[menu.main]]
