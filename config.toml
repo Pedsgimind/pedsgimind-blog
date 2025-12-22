@@ -6,10 +6,14 @@ languageCode = "en"
 title = "PedsGIMind | Multilingual Digestive Health & Medical Education"
 theme = "PaperMod"
 
-canonifyURLs = true
-relativeURLs = false
 enableRobotsTXT = true
 defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+
+# IMPORTANT:
+# Use clean URLs and avoid weird path rewriting
+canonifyURLs = false
+relativeURLs = false
 
 # =========================
 # Multilingual configuration
@@ -20,41 +24,51 @@ defaultContentLanguage = "en"
     languageName = "English"
     languageCode = "en"
     weight = 1
+    contentDir = "content/en"
 
   [languages.fr]
     languageName = "Français"
     languageCode = "fr"
     weight = 2
+    contentDir = "content/fr"
 
   [languages.es]
     languageName = "Español"
     languageCode = "es"
     weight = 3
+    contentDir = "content/es"
 
   [languages.ar]
     languageName = "العربية"
     languageCode = "ar"
     weight = 4
+    contentDir = "content/ar"
     rtl = true
 
   [languages.ku]
     languageName = "Kurdî"
     languageCode = "ku"
     weight = 5
+    contentDir = "content/ku"
     rtl = true
 
   [languages.fa]
     languageName = "فارسی"
     languageCode = "fa"
     weight = 6
+    contentDir = "content/fa"
     rtl = true
+
 
 # =========================
 # PaperMod theme parameters
 # =========================
 [params]
   env = "production"
-  description = "Evidence-based digestive health, nutrition, and medical education for professionals and families."
+
+  # Global SEO defaults
+  description = "Evidence-based pediatric digestive health, nutrition, and medical education for clinicians, parents, and trainees."
+  keywords = ["Pediatric Gastroenterology", "Digestive Health", "Medical Education", "Nutrition", "IBD", "Celiac", "Liver Disease"]
 
   ShowReadingTime = true
   ShowShareButtons = true
@@ -64,6 +78,7 @@ defaultContentLanguage = "en"
 
   disableSpecial1stPost = false
   hideSummary = false
+
 
 # =========================
 # Home page settings
@@ -75,43 +90,46 @@ Evidence-based digestive health, nutrition, and medical education.
 Serving professionals, parents, and trainees worldwide — in multiple languages.
 """
 
+
 # =========================
-# Menu (optional, clean)
+# Language-specific SEO descriptions
 # =========================
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
-  name = "Blog"
-  url = "/en/posts/"
-  weight = 2
-
-[[menu.main]]
-  name = "About"
-  url = "/en/about/"
-  weight = 3
-enableRobotsTXT = true
-canonifyURLs = true
-
-[params]
-description = "Evidence-based pediatric gastroenterology, digestive health, nutrition, and medical education for clinicians, parents, and trainees."
-keywords = ["Pediatric Gastroenterology", "Digestive Health", "Medical Education", "Nutrition", "IBD", "Celiac", "Liver Disease"]
 [languages.en.params]
-description = "Evidence-based pediatric digestive health, gastroenterology, nutrition, and medical education."
+  description = "Evidence-based pediatric digestive health, gastroenterology, nutrition, and medical education."
 
 [languages.ar.params]
-description = "محتوى طبي موثوق في أمراض الجهاز الهضمي للأطفال، التغذية، والتعليم الطبي."
+  description = "محتوى طبي موثوق في أمراض الجهاز الهضمي للأطفال، التغذية، والتعليم الطبي."
 
 [languages.fr.params]
-description = "Ressources médicales fiables en gastroentérologie pédiatrique et nutrition."
+  description = "Ressources médicales fiables en gastroentérologie pédiatrique et nutrition."
 
 [languages.es.params]
-description = "Educación médica y salud digestiva pediátrica basada en evidencia."
+  description = "Educación médica y salud digestiva pediátrica basada en evidencia."
 
 [languages.ku.params]
-description = "Zanyarîyên pêşkeftî yên tenduristiya têkildar bi geştrewêriyê zarokan."
+  description = "Zanyarîyên pêşkeftî yên tenduristiya têkildar bi geştrewêriyê zarokan."
 
 [languages.fa.params]
-description = "آموزش پزشکی و سلامت گوارش کودکان مبتنی بر شواهد علمی."
+  description = "آموزش پزشکی و سلامت گوارش کودکان مبتنی بر شواهد علمی."
+
+
+# =========================
+# Menu (multilingual-safe)
+# Use pageRef (NOT hard-coded /en/ links)
+# =========================
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Blog"
+    pageRef = "/posts/"
+    weight = 2
+
+  [[menu.main]]
+    name = "About"
+    pageRef = "/about"
+    weight = 3
