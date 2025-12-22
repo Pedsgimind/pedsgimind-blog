@@ -92,3 +92,26 @@ Serving professionals, parents, and trainees worldwide — in multiple languages
   name = "About"
   url = "/en/about/"
   weight = 3
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+description = "Evidence-based pediatric gastroenterology, digestive health, nutrition, and medical education for clinicians, parents, and trainees."
+keywords = ["Pediatric Gastroenterology", "Digestive Health", "Medical Education", "Nutrition", "IBD", "Celiac", "Liver Disease"]
+[languages.en.params]
+description = "Evidence-based pediatric digestive health, gastroenterology, nutrition, and medical education."
+
+[languages.ar.params]
+description = "محتوى طبي موثوق في أمراض الجهاز الهضمي للأطفال، التغذية، والتعليم الطبي."
+
+[languages.fr.params]
+description = "Ressources médicales fiables en gastroentérologie pédiatrique et nutrition."
+
+[languages.es.params]
+description = "Educación médica y salud digestiva pediátrica basada en evidencia."
+
+[languages.ku.params]
+description = "Zanyarîyên pêşkeftî yên tenduristiya têkildar bi geştrewêriyê zarokan."
+
+[languages.fa.params]
+description = "آموزش پزشکی و سلامت گوارش کودکان مبتنی بر شواهد علمی."
