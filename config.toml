@@ -1,42 +1,50 @@
 baseURL = "https://blog.pedsgimind.ca/"
-canonifyURLs = true
-relativeURLs = false
 languageCode = "en"
 title = "PedsGIMind | Multilingual Digestive Health & Medical Education"
+theme = "PaperMod"
+
+canonifyURLs = true
+relativeURLs = false
 defaultContentLanguage = "en"
 enableRobotsTXT = true
 
 [languages]
-
   [languages.en]
     languageName = "English"
+    languageCode = "en"
     weight = 1
-    contentDir = "content/en"
 
   [languages.fr]
     languageName = "Français"
+    languageCode = "fr"
     weight = 2
-    contentDir = "content/fr"
 
   [languages.es]
     languageName = "Español"
+    languageCode = "es"
     weight = 3
-    contentDir = "content/es"
 
   [languages.ar]
     languageName = "العربية"
+    languageCode = "ar"
     weight = 4
-    contentDir = "content/ar"
     rtl = true
 
   [languages.ku]
     languageName = "Kurdî"
+    languageCode = "ku"
     weight = 5
-    contentDir = "content/ku"
     rtl = true
 
   [languages.fa]
     languageName = "فارسی"
+    languageCode = "fa"
     weight = 6
-    contentDir = "content/fa"
     rtl = true
+
+[params]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
