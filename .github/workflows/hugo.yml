@@ -52,3 +52,10 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+[outputs]
+home = ["HTML", "RSS"]
+
+[params]
+mainSections = ["posts"]
