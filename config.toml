@@ -1,4 +1,6 @@
-baseURL = "https://pedsgimind.github.io/pedsgimind-blog/"
+baseURL = "https://blog.pedsgimind.ca/"
+canonifyURLs = true
+relativeURLs = false
 languageCode = "en"
 title = "PedsGIMind | Multilingual Digestive Health & Medical Education"
 defaultContentLanguage = "en"
