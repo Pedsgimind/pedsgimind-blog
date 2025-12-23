@@ -1,10 +1,8 @@
 ---
----
 title: "About"
 description: "Evidence-based pediatric digestive health, nutrition, and medical education for clinicians and families."
 date: 2025-12-18
 draft: false
----
 ---
 
 ## Welcome to PedsGIMind
